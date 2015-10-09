@@ -1,6 +1,6 @@
-#poreqc
+#poreQC v0.2.10
 
-poreQC sequencing run report v0.2.10
+poreQC sequencing run report
 
 ```
 usage:
