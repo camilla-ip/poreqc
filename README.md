@@ -1,9 +1,9 @@
 #poreQC v0.2.10
 
-poreQC sequencing run report
+poreQC nanopore sequencing experiment report
 
-Produces a PDF and HTML report based on either the intermediate or final output
-data from an Oxford Nanopore MinION device.
+Produces a PDF report based on either the intermediate or final output
+data from an Oxford Nanopore MinION experiment.
 
 Input:
 * a file of meta-data related to sample provenance, library preparation and
@@ -14,17 +14,13 @@ Input:
 Output:
 * a directory containing one text file of tabular data required for each plot
 * a directory of plots with suitable size and resolution for inclusion in a PDF
-* a directory of similar plots suitable for an HTML report to be displayed on a laptop [NOT IMPL]
-* a printable PDF version of the report, generated via LaTeX
-* an HTML version of the report that refers to images in a sub-directory [NOT IMPL]
+* a printable PDF version of the report
 
 Notes:
-# The program was designed to be run following an rsync of the sequencing data
-   from the sequencing laptop. A special 'data status file' will indicate whether
-   the run has completed or is still ongoing.
-# It is expected that the output directory for the HTML version of the report
-   will be a directory which is accessed by a web server so the laboratory people
-   running the MinION can view the current status of the data in real-time.
+# The program was designed to be run after an rsync of the raw sequencing data
+   from the sequencing laptop to a server which can process the data without
+   affecting the computer controlling the sequencing experiment. A special
+   'data status file' will indicate whether the run has completed or is still ongoing.
 
 ```
 usage:
