@@ -6,18 +6,18 @@ Produces a PDF report based on either the intermediate or final output
 data from an Oxford Nanopore MinION experiment.
 
 Input:
-* a file of meta-data related to sample provenance, library preparation and
-  suitable reference for the target genome(s) with which to do the QC.
-* directory containing a copy of the basecalled and/or pre-basecalled .fast5 files
-  produced by the run so far.
+* a file of sample, library and sequencing metadata
+* directory containing the basecalled and/or pre-basecalled .fast5 files
 
 Output:
-* a directory containing one text file of tabular data required for each plot
-* a directory of plots with suitable size and resolution for inclusion in a PDF
-* a printable PDF version of the report
+* report.pdf    : printable report of statistics and diagnostic plots
+* readstats.txt : statistics on events from the MinION (TSV format)
+* callstats.txt : statistics on the base-calls returned by Metrichor (TSV format)
+* table.txt     : summary statistics for the run (human-readable text)
+* table.csv     : summary staitstics for the run (TSV format)
 
 Notes:
-# The program was designed to be run after an rsync of the raw sequencing data
+* The program was designed to be run after an rsync of the raw sequencing data
    from the sequencing laptop to a server which can process the data without
    affecting the computer controlling the sequencing experiment. A special
    'data status file' will indicate whether the run has completed or is still ongoing.
