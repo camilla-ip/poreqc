@@ -41,9 +41,9 @@ optional arguments:
                         (Must contain either "Running" or "Finished")
                         (default: status.txt)
   --refdir str          Top-level directory for all references (e.g., for
-                        wtchgR00000021 you would specify
+                        Ecoli you would specify
                         /path/to/references to find file
-                        /path/to/references/wtchgR00000021/wtchgR00000021.fasta) (default:
+                        /path/to/references/Ecoli/Ecoli.fasta) (default:
                         /path/to/data/references)
   --outdir str          Write all output to this directory (default: None)
   --outprefix str       All output files will start with this prefix (default:
